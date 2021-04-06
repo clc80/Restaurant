@@ -104,14 +104,75 @@
                     <view key="view" contentMode="scaleToFill" id="cNe-JZ-ogA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-Dl-mmz">
+                                <rect key="frame" x="8" y="96" width="398" height="224"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-DT-IId">
+                                <rect key="frame" x="8" y="360" width="398" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34f-ZG-8Fl">
+                                <rect key="frame" x="326" y="328" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="kiO-MB-ttX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bj-P5-ZS1">
+                                <rect key="frame" x="8" y="769" width="398" height="36"/>
+                                <color key="backgroundColor" red="0.08033266603" green="0.5" blue="0.66017104400000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add To Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToOrderButtonPressed:" destination="Q8N-KL-4X0" eventType="touchUpInside" id="x29-Xr-WxT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dej-YG-IXr">
+                                <rect key="frame" x="8" y="328" width="310" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="I8x-Dq-uPB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I8x-Dq-uPB" firstAttribute="trailing" secondItem="kbg-Dl-mmz" secondAttribute="trailing" constant="8" id="1UG-JA-pSf"/>
+                            <constraint firstItem="I8x-Dq-uPB" firstAttribute="trailing" secondItem="hcr-DT-IId" secondAttribute="trailing" constant="8" id="5yI-rR-Ti1"/>
+                            <constraint firstItem="3bj-P5-ZS1" firstAttribute="leading" secondItem="I8x-Dq-uPB" secondAttribute="leading" constant="8" id="Ap7-Ck-vvb"/>
+                            <constraint firstItem="kbg-Dl-mmz" firstAttribute="height" secondItem="cNe-JZ-ogA" secondAttribute="height" multiplier="0.25" id="EI8-l0-djL"/>
+                            <constraint firstItem="dej-YG-IXr" firstAttribute="top" secondItem="kbg-Dl-mmz" secondAttribute="bottom" constant="8" id="FCO-hM-iu6"/>
+                            <constraint firstItem="hcr-DT-IId" firstAttribute="top" secondItem="dej-YG-IXr" secondAttribute="bottom" constant="8" id="IaX-Sj-Rc9"/>
+                            <constraint firstItem="I8x-Dq-uPB" firstAttribute="trailing" secondItem="3bj-P5-ZS1" secondAttribute="trailing" constant="8" id="Qll-Hc-vlH"/>
+                            <constraint firstItem="dej-YG-IXr" firstAttribute="leading" secondItem="I8x-Dq-uPB" secondAttribute="leading" constant="8" id="aNm-ai-GgM"/>
+                            <constraint firstItem="kbg-Dl-mmz" firstAttribute="top" secondItem="I8x-Dq-uPB" secondAttribute="top" constant="8" id="aPd-kV-nig"/>
+                            <constraint firstItem="34f-ZG-8Fl" firstAttribute="top" secondItem="kbg-Dl-mmz" secondAttribute="bottom" constant="8" id="dUZ-OX-3lA"/>
+                            <constraint firstItem="kbg-Dl-mmz" firstAttribute="leading" secondItem="I8x-Dq-uPB" secondAttribute="leading" constant="8" id="lls-XX-1zF"/>
+                            <constraint firstItem="I8x-Dq-uPB" firstAttribute="trailing" secondItem="34f-ZG-8Fl" secondAttribute="trailing" constant="8" id="v92-xq-1wQ"/>
+                            <constraint firstItem="34f-ZG-8Fl" firstAttribute="leading" secondItem="dej-YG-IXr" secondAttribute="trailing" constant="8" id="yPk-hu-JIC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="3bj-P5-ZS1" secondAttribute="bottom" constant="8" id="yZp-Jl-W48"/>
+                            <constraint firstItem="hcr-DT-IId" firstAttribute="leading" secondItem="I8x-Dq-uPB" secondAttribute="leading" constant="8" id="z5R-0z-cPC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="OgI-Qh-iuN"/>
+                    <connections>
+                        <outlet property="addToOrderButton" destination="3bj-P5-ZS1" id="mtw-mM-fTD"/>
+                        <outlet property="detailTextLabel" destination="hcr-DT-IId" id="Lni-wr-AqO"/>
+                        <outlet property="imageview" destination="kbg-Dl-mmz" id="Sph-vh-ouq"/>
+                        <outlet property="priceLabel" destination="34f-ZG-8Fl" id="Zdm-Fe-e4t"/>
+                        <outlet property="titleLabel" destination="dej-YG-IXr" id="zAL-Zn-FId"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gF8-pW-F7y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2725" y="-241"/>
+            <point key="canvasLocation" x="2724.6376811594205" y="-241.07142857142856"/>
         </scene>
         <!--Order-->
         <scene sceneID="hX4-v2-8fI">
@@ -199,8 +260,12 @@
     <resources>
         <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="pencil.and.ellipsis.rectangle" catalog="system" width="128" height="81"/>
+        <image name="placeholder" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
