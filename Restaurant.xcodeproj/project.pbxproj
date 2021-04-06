@@ -19,6 +19,7 @@
 		3AB9DF35261C00B80024EECD /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9DF34261C00B80024EECD /* MenuItem.swift */; };
 		3AB9DF38261C01D00024EECD /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9DF37261C01D00024EECD /* IntermediaryModels.swift */; };
 		3AB9DF3B261C021B0024EECD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9DF3A261C021B0024EECD /* Order.swift */; };
+		3AB9DF3F261C052B0024EECD /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9DF3E261C052B0024EECD /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3AB9DF34261C00B80024EECD /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		3AB9DF37261C01D00024EECD /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		3AB9DF3A261C021B0024EECD /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		3AB9DF3E261C052B0024EECD /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,8 @@
 			children = (
 				3AB9DF33261C00770024EECD /* Model */,
 				3AB9DF32261C00700024EECD /* View */,
-				3AB9DF24261BFE3C0024EECD /* Controller */,
+				3AB9DF24261BFE3C0024EECD /* View Controller */,
+				3AB9DF3D261C04250024EECD /* Controller */,
 				3AB9DF0F261BFBBE0024EECD /* AppDelegate.swift */,
 				3AB9DF11261BFBBE0024EECD /* SceneDelegate.swift */,
 				3AB9DF15261BFBBE0024EECD /* Main.storyboard */,
@@ -81,7 +84,7 @@
 			path = Restaurant;
 			sourceTree = "<group>";
 		};
-		3AB9DF24261BFE3C0024EECD /* Controller */ = {
+		3AB9DF24261BFE3C0024EECD /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				3AB9DF25261BFE5A0024EECD /* CategoryTableViewController.swift */,
@@ -89,7 +92,7 @@
 				3AB9DF2B261BFE7F0024EECD /* OrderTableViewController.swift */,
 				3AB9DF2F261BFF5A0024EECD /* MenuItemDetailViewController.swift */,
 			);
-			path = Controller;
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 		3AB9DF32261C00700024EECD /* View */ = {
@@ -107,6 +110,14 @@
 				3AB9DF3A261C021B0024EECD /* Order.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB9DF3D261C04250024EECD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AB9DF3E261C052B0024EECD /* MenuController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB9DF3F261C052B0024EECD /* MenuController.swift in Sources */,
 				3AB9DF35261C00B80024EECD /* MenuItem.swift in Sources */,
 				3AB9DF10261BFBBE0024EECD /* AppDelegate.swift in Sources */,
 				3AB9DF30261BFF5A0024EECD /* MenuItemDetailViewController.swift in Sources */,
