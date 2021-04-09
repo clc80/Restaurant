@@ -206,6 +206,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="xDw-0G-JNE" kind="show" identifier="ConfirmationSegue" id="VIe-xi-py6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -213,11 +216,62 @@
                             <outlet property="delegate" destination="8o1-KC-pjF" id="smX-ao-e5X"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Order" id="pWQ-6x-ptd"/>
+                    <navigationItem key="navigationItem" title="Order" id="pWQ-6x-ptd">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="Glv-Sa-p2N">
+                            <connections>
+                                <action selector="submitTapped:" destination="8o1-KC-pjF" id="BDI-Hl-eLv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ob-bM-WXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150.7246376811595" y="487.5"/>
+            <point key="canvasLocation" x="1219" y="488"/>
+        </scene>
+        <!--Order Confirmation View Controller-->
+        <scene sceneID="9N5-9f-WlY">
+            <objects>
+                <viewController id="xDw-0G-JNE" customClass="OrderConfirmationViewController" customModule="Restaurant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tWc-F6-Ju8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sbw-4R-fth">
+                                <rect key="frame" x="8" y="413" width="398" height="70.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecz-Gz-0Xj">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-jZ-3yY">
+                                        <rect key="frame" x="0.0" y="40.5" width="398" height="30"/>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <segue destination="wlj-i8-AxI" kind="unwind" identifier="DismissConfirmation" unwindAction="unwindToOrderListWithSegue:" id="O1Z-pR-0of"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iuQ-ju-6qK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sbw-4R-fth" firstAttribute="leading" secondItem="iuQ-ju-6qK" secondAttribute="leading" constant="8" id="814-ID-Vzq"/>
+                            <constraint firstItem="sbw-4R-fth" firstAttribute="centerY" secondItem="tWc-F6-Ju8" secondAttribute="centerY" id="TbM-kU-ngh"/>
+                            <constraint firstItem="iuQ-ju-6qK" firstAttribute="trailing" secondItem="sbw-4R-fth" secondAttribute="trailing" constant="8" id="oyz-0N-FQS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="slb-aj-Ld0"/>
+                    <connections>
+                        <outlet property="timeRemainingLabel" destination="Ecz-Gz-0Xj" id="DPs-cH-qEX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qB-VS-Q5R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wlj-i8-AxI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="496"/>
         </scene>
         <!--Your Order-->
         <scene sceneID="knE-0i-nTj">

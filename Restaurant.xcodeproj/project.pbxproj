@@ -20,6 +20,7 @@
 		3AB9DF38261C01D00024EECD /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9DF37261C01D00024EECD /* IntermediaryModels.swift */; };
 		3AB9DF3B261C021B0024EECD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9DF3A261C021B0024EECD /* Order.swift */; };
 		3AB9DF3F261C052B0024EECD /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9DF3E261C052B0024EECD /* MenuController.swift */; };
+		3AC05FE8261FF6200067AA6E /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC05FE7261FF6200067AA6E /* OrderConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3AB9DF37261C01D00024EECD /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		3AB9DF3A261C021B0024EECD /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		3AB9DF3E261C052B0024EECD /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		3AC05FE7261FF6200067AA6E /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				3AB9DF28261BFE6E0024EECD /* MenuTableViewController.swift */,
 				3AB9DF2B261BFE7F0024EECD /* OrderTableViewController.swift */,
 				3AB9DF2F261BFF5A0024EECD /* MenuItemDetailViewController.swift */,
+				3AC05FE7261FF6200067AA6E /* OrderConfirmationViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				3AB9DF38261C01D00024EECD /* IntermediaryModels.swift in Sources */,
 				3AB9DF12261BFBBE0024EECD /* SceneDelegate.swift in Sources */,
 				3AB9DF2C261BFE7F0024EECD /* OrderTableViewController.swift in Sources */,
+				3AC05FE8261FF6200067AA6E /* OrderConfirmationViewController.swift in Sources */,
 				3AB9DF26261BFE5A0024EECD /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
